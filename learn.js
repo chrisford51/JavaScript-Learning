@@ -126,3 +126,89 @@ console.log(5 % 3);     // outputs 2
 &&
 ##//If Statements
 &&
+
+#
+#
+#
+#
+#
+#
+
+&&
+##//For Statements
+&&
+
+var i;
+for (i = 0; i < 3; i = i +1)
+  {
+    console.log(i);
+  }
+//Prints 0, 1, 2
+
+// For Statements has 3 parts:
+//
+//     Initialization - Initializes the iterator variable i. In this example, we initialize i to 0.
+//     Condition - As long as the condition is met, the loop continues to execute. In this example, we check that i is less than 3.
+//     Increment - A directive which increments the iterator. In our case, we increment it by 1 on every loop.
+
+//Shortened For statement
+for var i = 0; i < 3; i++)
+  {
+    console.log(i);
+  }
+
+
+//Iterate over an Array
+var myArray = ["A", "B", "C"];
+for (var i = 0; i < myArray.length; i++)
+  {
+    console.log("the member of myArray in index " + i + "is "myArray[i]);
+  }
+
+//Prints out
+// The member of myArray in index 0 is A
+// The member of myArray in index 1 is B
+// The member of myArray in index 2 is C
+
+
+&&
+##//While Statements
+&&
+
+//While Statements check to see if a statement is true, and then runs as long as its true.
+var i = 99;
+while (i > 0)
+{
+    console.log(i + " bottles of beer on the wall");
+    i -= 1;
+}
+
+&&
+##//Break and Continue statements
+&&
+
+//The break statement allows to stop the execution of a loop. For example, we can create a loop that loops forever using while(true) and use the break statement to break inside the loop instead by checking that a certain condition was met.
+
+var i = 99;
+while (true)
+  {
+    console.log(i + " bottles of beer on the wall");
+    i -= 1;
+    if (i == 0)
+      {
+        break;
+      }
+  }
+
+  // The continue statement skips the rest of the loop and jumps back to the beginning of the loop. For example, if we would want to print only odd numbers using a for statement, we can do the following:
+
+  for (var i = 0; i < 100; i++)
+{
+    // check that the number is even
+    if (i % 2 == 0)
+    {
+         continue;
+    }
+    // if we got here, then i is odd.
+    console.log(i + " is an odd number.");
+}

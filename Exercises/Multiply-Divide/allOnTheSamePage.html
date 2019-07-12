@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiply-Divde</title>
+  <style media="screen" type="text/css">
+    body {margin: 30px;}
+  </style>
+</head>
+<body>
+<form class="" action="index.html" method="post">
+  1st Number : <input type="text" id="firstNumber"> <br>
+  2nd Number : <input type="text" id="secondNumber"> <br>
+  <input type="button" value="Multiply" onClick="multiplyBy">
+  <input type="button" value="Divide" onClick="divideBy">
+</form>
+
+<p>The result is : </p> <br>
+<span id="Result"></span>
+
+
+
+<script type="text/javascript">
+  function multiplyBy()
+  {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("Result").innerHTML = num1 * num2;
+  }
+
+  function divideBy()
+  {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementByID("secondNumber").value;
+    document.getElementById("Result").innerHTML = num1 / num2;
+  }
+
+</script>
+</body>
+</html>
